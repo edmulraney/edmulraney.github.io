@@ -1,6 +1,8 @@
 <script>
-  const r = await window.fetch("https://github.com/aave/interface/releases/download/release-2023-12-30_22-16/app.tar.gz").then(r => r.arrayBuffer())
-  console.log({ r })
+  (async () => {
+    const r = await window.fetch("https://github.com/aave/interface/releases/download/release-2023-12-30_22-16/app.tar.gz").then(r => r.arrayBuffer())
+    console.log({ r })
+  })()
   // document.addEventListener("DOMContentLoaded", async () => {
   //   if ('serviceWorker' in navigator) {
   //     try {
